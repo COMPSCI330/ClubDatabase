@@ -35,6 +35,38 @@
   color: white;
 }
 
+.club-header
+{
+  color: red;
+  text-align: center;
+}
+
+.head-bar
+{
+  color: black;
+    text-align: center;
+
+}
+
+.club-image
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.club-info 
+{
+      text-align: center;
+
+}
+.more-info
+{
+      text-align: center;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
 /* Style the search box inside the navigation bar */
 .topnav input[type=text] {
   float: right;
