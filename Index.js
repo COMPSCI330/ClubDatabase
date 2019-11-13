@@ -12,12 +12,12 @@ function lookupClub(){
     }
     for(var key in clubsDictionary){
         if(key == userInputString){
-            route = clubsDictionary[key]; 
+            route = clubsDictionary[key];
         }
     }
 
     if(route == null){
         document.write("club not found :( ");
     }
-    return route;
+    window.location.href = route;
 }
