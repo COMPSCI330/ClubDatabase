@@ -8,7 +8,10 @@ ul li {
 	margin-bottom: 3px;
 	margin-right: 5px;
 }
-
+.indexheading
+{
+  margin-top: 1000px; 
+}
 .learn_more_button{
   position: relative;
   left:5px;
@@ -58,6 +61,7 @@ ul li {
 .header{
   background-color: #CFECEC;
   height: 70px;
+  margin-bottom: 10px;
 }
 
 .footer{
