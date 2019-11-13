@@ -8,7 +8,8 @@ var userInputString = null;
 function lookupClub(){
     userInputString = document.getElementById("club_search_name").value;
     if(userInputString == ""){
-        document.write("error, no submission");
+        alert("error, no submission");
+        return;
     }
     for(var key in clubsDictionary){
         if(key == userInputString){
@@ -17,7 +18,12 @@ function lookupClub(){
     }
 
     if(route == null){
-        document.write("club not found :( ");
+        alert("club not found :( ");
+        window.location.href = "index.html";
+        return;
+    }else{
+        window.location.href = route;
+        return;
     }
-    window.location.href = route;
+   
 }

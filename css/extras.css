@@ -1,3 +1,59 @@
+ul li {
+	border-style: solid;
+	border-color: #D3D3D3;
+	border-width: 1px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	margin-bottom: 3px;
+	margin-right: 5px;
+}
+
+.learn_more_button{
+  position: relative;
+  left:5px;
+}
+.container{
+  background-color: #CFECEC;
+}
+.club_title_text{
+  padding-left: 5px;
+  word-wrap: break-word;
+  width: 250px;
+  text-size-adjust: auto;
+}
+.description_text{
+  word-wrap: break-word;
+  width: 250px;
+  border-style: solid;
+  border-color:#D3D3D3;
+  padding: 5px;
+  position: relative;
+  left: 5px;
+}
+.column {
+  float: left;
+  width: 280px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  position: relative;
+  top: 20px;
+  bottom: 2px;
+  left: 200px;
+  margin-right: 9%;
+  background-color: #CFECEC;
+}
+.row{
+  display: flex;
+}
+
+.popular_images{
+  width: 250px;
+	height: 180px;
+	padding-left:8px;
+	padding-top: 22px;
+}
 
 .header{
   background-color: #CFECEC;
@@ -5,7 +61,18 @@
 }
 .search_bar{
   text-align: center;
+  position: relative;
+  top: 10px;
 }
+
+.helper_text{
+  text-align:center;
+  position: relative;
+  top:50px; 
+  margin-bottom: 4%;
+}
+
+
 /* Add a black background color to the top navigation bar */
 .topnav {
   overflow: hidden;
@@ -21,6 +88,8 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  position: relative;
+  top: 100px;
 }
 
 /* Change the color of links on hover */
