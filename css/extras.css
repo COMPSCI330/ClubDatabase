@@ -49,9 +49,10 @@
 
 .club-header
 {
-  font-size: 20px;
-    color: red;
+  font-size: 30px;
+    color: black;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .head-bar
@@ -70,6 +71,8 @@
 .club-info 
 {
       text-align: center;
+        margin-bottom: 10px;
+
 
 }
 .more-info
