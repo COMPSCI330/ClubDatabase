@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html>
 <title>Graduate Student Club</title>
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/extras.css">
 
 <body>
-  <h1> Graduate Student Club </h1>
-  <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-</p>
-  <h2> Comments about the Club </h2>
-  <p id="demo"></p>
+  <div class="header">
+    <form>
+      <input type="button" value="Go back!" onclick="history.back()">
+    </form>
 
-  <form id="frm1" action="/action_page.php">
-    Name: <input type="text" name="fname"><br>
-    Comment: <input type="text" name="lname" style="height:25px;width:300px"><br><br>
-  </form>
+    <body>
+      <button onclick="window.location.href = 'index.html';">Home</button>
+  </div>
+  <h1> <img src="images/hangout.jpg" alt = "Club Picture" style="float:right;width:250px;height:200px;">Graduate Student Club </h1>
+  <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  </p>
 
-  <button onclick="myFunction()">Submit your commment</button>
 
+  <div class="comment">
+    <textarea id="title" type="text " rows="2" cols="40" onkeyup="Allow()" placeholder="write your name (optional) and a comment......"></textarea>
+    <br>
+    <input type="submit" value="Post" onclick="insert()" style="width:100px;" /></form>
+    <br>
+  </div>
+  <div id="display"></div>
+  <script type="text/javascript">
+    var titles = [];
+    var titleInput = document.getElementById("title");
+    var messageBox = document.getElementById("display");
 
-
-  <script>
-    function myFunction() {
-      var x = document.getElementById("frm1");
-      var text = "";
-      var i;
-      for (i = 0; i < x.length; i++) {
-        text += x.elements[i].value + "<br>";
+    function Allow() {
+      if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value != "") {
+        user.title.value = "";
+        alert("Please enter only alphabets");
       }
-      document.getElementById("demo").innerHTML = text;
+      window.location.reload()
+    }
+
+    function insert() {
+      titles.push(titleInput.value);
+      clearAndShow();
+    }
+
+    function clearAndShow() {
+      titleInput.value = "";
+      messageBox.innerHTML = "";
+      messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
     }
   </script>
 
 </body>
+
 </html>
