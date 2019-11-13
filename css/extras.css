@@ -57,7 +57,16 @@ ul li {
 
 .header{
   background-color: #CFECEC;
-  height: 50px;
+  height: 70px;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #CFECEC;
+  height: 70px;
 }
 .search_bar{
   text-align: center;
@@ -91,7 +100,10 @@ ul li {
   position: relative;
   top: 100px;
 }
-
+.footerbutton
+{
+  text-align: center;
+}
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
@@ -106,8 +118,10 @@ ul li {
 
 .club-header
 {
-  color: red;
+  font-size: 30px;
+    color: black;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .head-bar
@@ -126,6 +140,8 @@ ul li {
 .club-info 
 {
       text-align: center;
+        margin-bottom: 10px;
+
 
 }
 .more-info
@@ -133,6 +149,11 @@ ul li {
       text-align: center;
 }
 
+.page3button
+{
+  width: 83px;
+  align-self: left;
+}
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
