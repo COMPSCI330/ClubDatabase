@@ -23,13 +23,14 @@
   <p> Email: random@northwestern.edu </p>
   <p> Number: 555-555-5555 </p>
   <p> Contact Name: John Doe </p>
-
+  <p>-------------------------------------------------------------------------</p>
   <h2> Calendar </h2>
   <div id="calendar">
 
       </div>
       <script type="text/javascript" src="js/calendar.js"></script>
       <script type="text/javascript" src="js/demo.js"></script>
+      <p>-------------------------------------------------------------------------</p>
 <h2> Comments </h2>
   <div class="comment">
 
@@ -37,15 +38,20 @@
       <textarea id="title" type="text " rows="2" cols="40" placeholder="write your name (optional) and a comment......"></textarea>
       <br>
       <input type="submit" value="Post" onclick="insert()" style="width:100px;" />
+
     <br>
     <br>
   </div>
+  <div class = "comment_box">
   <div id="display"></div>
-  <div>
-    <footer class="footer">
-      <div class="footerbutton">Contact Us</div>
-    </footer>
+  <p>Brandon: first comment</p>
+  <p>Pahul: second comment</p>
   </div>
+  <div>
+    
+  </div>
+  
+
   <script type="text/javascript">
     var nameinput = document.getElementById("name");
     var titles = [];
@@ -70,6 +76,8 @@
       messageBox.innerHTML += " " + titles.join(" ");
     }
   </script>
+  
+
 
 
 
