@@ -20,7 +20,16 @@
 
   <p class = "search_bar">
     <input type="text" id = "club_search_name" placeholder="Search..">
-    <button onclick="lookupClub()">Search Clubs!</button>
+    <button id = "myBtn" onclick="lookupClub()">Search Clubs!</button>
+    <script>
+    var input = document.getElementById("club_search_name");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+       event.preventDefault();
+       document.getElementById("myBtn").click();
+      }
+    });
+    </script>
   </p>
   <div class = "helper_text">
     <h3>Popular Clubs</h3>
