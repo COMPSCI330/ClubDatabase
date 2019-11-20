@@ -47,7 +47,7 @@
   <div class="comment">
 
       <textarea id="name" type="text" rows="1" cols="40" placeholder="Name (optional)"></textarea><br>
-      <textarea id="title" type="text " rows="2" cols="40" placeholder="write your name (optional) and a comment......"></textarea>
+      <textarea id="comm" type="text " rows="2" cols="40" placeholder="write your name (optional) and a comment......"></textarea>
       <br>
       <input type="submit" value="Post" onclick="insert()" style="width:100px;" />
 
@@ -67,7 +67,7 @@
   <script type="text/javascript">
     var nameinput = document.getElementById("name");
     var titles = [];
-    var titleInput = document.getElementById("title");
+    var titleInput = document.getElementById("comm");
     var messageBox = document.getElementById("display");
 
     function insert() {
