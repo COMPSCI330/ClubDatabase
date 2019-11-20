@@ -20,6 +20,11 @@ ul li {
 
 }
 
+.comment_box{
+  border-style: solid;
+  border-color: black;
+  width: 50%;
+}
 .p2button
 {
   width: 80px;
