@@ -8,6 +8,18 @@ ul li {
 	margin-bottom: 3px;
 	margin-right: 5px;
 }
+.club-select-wrapper
+{
+    background-color: #CFECEC;
+    width: 300px;
+    height: 500px;
+    align-self: center;
+    position: relative;
+    align-content: center;
+    margin-left: 40%;
+
+}
+
 .p2button
 {
   width: 80px;
@@ -145,6 +157,8 @@ ul li {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height: 250px;
+  width: 250px;
 }
 .club-info
 {
