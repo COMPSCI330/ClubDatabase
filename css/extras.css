@@ -19,7 +19,31 @@ ul li {
     margin-left: 40%;
 
 }
-
+#title
+{
+  margin-left: 20px;
+}
+#month
+{
+  margin-left: 20px;
+}
+#day
+{
+  margin-left: 20px;
+}
+#year
+{
+  margin-left: 20px;
+}
+#page4button
+{
+  left: 40px;
+  position: relative;
+}
+#name
+{
+  margin-left: 20px;
+}
 .comment_box{
   border-style: solid;
   border-color: black;
