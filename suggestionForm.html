@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <title>Club Suggestion Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/extras.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <body>
+        <div class = "header">
+            <h1 class="indexheading">Suggestion Form Survey!</h1>
+        </div>
+        <form class="suggestionForm" id = "suggestionForm_">
+            Are you a graduate student?<br>
+            <input type = "radio" name="grad?1" value="1" onclick="updateData()">Yes
+            <input type = "radio" name="grad?2" value="0"onclick="updateData()">No<br>
+            Do you like volunteering?<br>
+            <input type = "radio" name="volunteer?1" value="1" onclick="updateData()">Yes
+            <input type = "radio" name="volunteer?2" value="0"onclick="updateData()">No<br>
+            Do you like sports?<br>
+            <input type = "radio" name="sports?1" value="1" onclick="updateData()">Yes
+            <input type = "radio" name="sports?2" value="0" onclick="updateData()">No<br>
+            Do you like to design?<br>
+            <input type = "radio" name="design?1" value="1" onclick="updateData()">Yes
+            <input type = "radio" name="design?2" value="0"  onclick="updateData()">No<br>
+            Are you seeking a leadership position?<br>
+            <input type = "radio" name="leadership?1" value="1" onclick="updateData()">Yes
+            <input type = "radio" name="leadership?2" value="0" onclick="updateData()">No<br><br>
+
+            <input type="submit" value="Submit!" onclick="match_huh()">
+        </form>
+        <script src="js/suggestionForm.js"></script>
+    </body>
+</html>

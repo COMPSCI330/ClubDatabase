@@ -62,6 +62,7 @@ ul li {
 .indexheading
 {
   margin-top: 1px;
+  text-align: center;
 }
 .learn_more_button{
   position: relative;
@@ -70,46 +71,60 @@ ul li {
 .container{
   background-color: #CFECEC;
 }
+.suggestionForm{
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
 .club_title_text{
   padding-left: 5px;
   word-wrap: break-word;
   width: 250px;
   text-size-adjust: auto;
+  text-align: center;
+  position: relative;
+  left:  250px;
 }
 .description_text{
   word-wrap: break-word;
-  width: 250px;
+  width: 700px;
   border-style: solid;
   border-color:#D3D3D3;
   padding: 5px;
   position: relative;
-  left: 5px;
+  left: 30px;
+  text-align:center;
 }
-.column {
-  float: left;
-  width: 280px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-right: 5px;
+
+.pop_clubs{
+  margin: auto;
+  width: 50%;
+  border: 3px;
+  border-style: solid;
+  border-color: #D3D3D3 ;
+  padding: 10px;
   position: relative;
-  top: 20px;
-  bottom: 2px;
-  left: 200px;
-  margin-right: 9%;
-  background-color: #CFECEC;
-}
-.row{
-  display: flex;
+  top: 380px;
+  height: 350px;
+  z-index: 1;
 }
 
 .popular_images{
-  width: 250px;
+  position: relative;  
+  width: 800px;
 	height: 180px;
-	padding-left:8px;
-	padding-top: 22px;
+  padding-left:8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  z-index: -1;
 }
 
 .header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   background-color: #CFECEC;
   height: 70px;
   margin-bottom: 10px;
@@ -126,15 +141,30 @@ ul li {
 .search_bar{
   text-align: center;
   position: relative;
-  top: 10px;
+  top: 150px;
 }
 
-.helper_text{
+
+.helper_text_title{
   text-align:center;
   position: relative;
-  top:50px;
+  top:5px;
   margin-bottom: 4%;
 }
+
+.helper_text_sub2{
+  text-align:center;
+  position: relative;
+  top: 385px;
+  font-size: smaller;
+}
+.helper_text_sub1{
+  text-align:center;
+  position: relative;
+  top: 270px;
+  font-size: smaller;
+}
+
 
 
 /* Add a black background color to the top navigation bar */
