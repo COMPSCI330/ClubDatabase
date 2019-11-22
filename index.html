@@ -3,21 +3,13 @@
 <html>
 <title>Club Database</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/extras.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <body>
   <div class = "header">
-    <div class="indexheading"><h1 class = "helper_text">Welcome to Club Database</h1></div>
+    <div class="indexheading"><h1 class = "helper_text_title">Welcome to Club Database</h1></div>
 
   </div>
-
-  <div class = "helper_text">
-    <h2>Find Clubs!</h2>
-  </div>
-
   <p class = "search_bar">
     <input type="text" id = "club_search_name" placeholder="Club Soccer..">
     <button id = "myBtn" onclick="lookupClub()">Search Clubs!</button>
@@ -31,15 +23,19 @@
     });
     </script>
   </p>
-  <div class = "helper_text">
-    <h3>Popular Clubs</h3>
+  <div class = "helper_text_sub1">
+    <h3>Or take this short survey to find your best fit!</h3>
+    <button><a href="suggestionForm.html">Take Survey!</a></button>
   </div>
-  <div style = "background-color: #cfecec">
-    <div class = "column">
+  <div class = "helper_text_sub2">
+    <h3>Popular Club</h3>
+  </div>
+  <div>
+    <div class = "pop_clubs">
       <div class = "row">
         <img class = "popular_images" src = "images/p1.jpg">
       </div>
-      <div class = "row">
+      <div class="row">
         <p class = "club_title_text"> Google Developers Student Club</p>
       </div>
       <div class = "row">
@@ -47,32 +43,6 @@
         </p>
       </div>
       <button class="learn_more_button"> <a href = "index.html"> Learn More!</a></button>
-    </div>
-
-    <div class = "column">
-      <div class = "row">
-        <img class = "popular_images"  src = "images/p2.jpg">
-      </div>
-      <div class = "row">
-        <p class = "club_title_text"> Popular Club 2</p>
-      </div>
-      <div class = "row">
-        <p class = "description_text">Here is a basic description of the club blah balh balh here is what we do basi basic to learn more click the button</p>
-      </div>
-      <button class="learn_more_button"> <a href = "index.html"> Learn More!</a></button>
-    </div>
-
-    <div class = "column">
-      <div class = "row">
-        <img class = "popular_images" src = "images/p3.jpg">
-      </div>
-      <div class = "row">
-        <p class = "club_title_text"> Popular Club 3</p>
-      </div>
-      <div class = "row">
-        <p class = "description_text">Here is a basic description of the club blah balh balh here is what we do basi basic to learn more click the button</p>
-      </div>
-      <button class="learn_more_button"><a href = "index.html"> Learn More!</a></button>
     </div>
   </div>
 
