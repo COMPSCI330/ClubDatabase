@@ -45,7 +45,7 @@ function match_huh(){
         i = 0; // reset since we're re-using 'i'
     }
 
-    window.location.href = "suggestedClubsResults.html"
+    window.location.href = "suggestedClubsResults.html";
     return;
 }
 
