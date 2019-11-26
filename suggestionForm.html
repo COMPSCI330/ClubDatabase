@@ -9,23 +9,27 @@
             <h1 class="indexheading">Suggestion Form Survey!</h1>
         </div>
         <form class="suggestionForm" id = "suggestionForm_">
-            Are you a graduate student?<br>
-            <input type = "radio" name="grad?1" value="1" onclick="updateData()">Yes
-            <input type = "radio" name="grad?2" value="0"onclick="updateData()">No<br>
-            Do you like volunteering?<br>
-            <input type = "radio" name="volunteer?1" value="1" onclick="updateData()">Yes
-            <input type = "radio" name="volunteer?2" value="0"onclick="updateData()">No<br>
-            Do you like sports?<br>
-            <input type = "radio" name="sports?1" value="1" onclick="updateData()">Yes
-            <input type = "radio" name="sports?2" value="0" onclick="updateData()">No<br>
-            Do you like to design?<br>
-            <input type = "radio" name="design?1" value="1" onclick="updateData()">Yes
-            <input type = "radio" name="design?2" value="0"  onclick="updateData()">No<br>
-            Are you seeking a leadership position?<br>
-            <input type = "radio" name="leadership?1" value="1" onclick="updateData()">Yes
-            <input type = "radio" name="leadership?2" value="0" onclick="updateData()">No<br><br>
+            How would you rate your experience on our app? (1 being the lowest)<br>
+            <input type = "radio" name="grad?1" value="1" >1
+            <input type = "radio" name="grad?2" value="0">2
+            <input type = "radio" name="grad?2" value="0">3
+            <input type = "radio" name="grad?2" value="0">4
+            <input type = "radio" name="grad?2" value="0">5<br><br>
+            Would you reccomend us to a friend?<br>
+            <input type = "radio" name="volunteer?1" value="1" >Yes
+            <input type = "radio" name="volunteer?2" value="0">No<br><br>
+            What features do you dislike about the app? (50 words or less)<br>
+            <input type = "text" name="dislike?" placeholder="nothing..."><br><br>
+            What features do you like about the app? (50 words or less)<br>
+            <input type = "text" name="like?" placeholder="everything..."><br><br>
+            On a scale from 1 to 5 (1 being the lowest), how easy is it navigating Club Database?<br>
+            <input type = "radio" name="grad?1" value="1" >1
+            <input type = "radio" name="grad?2" value="0">2
+            <input type = "radio" name="grad?2" value="0">3
+            <input type = "radio" name="grad?2" value="0">4
+            <input type = "radio" name="grad?2" value="0">5<br><br><br>
 
-           <input type="submit" value="Submit!" onclick="match_huh()">
+           <button><a href="thankyou.html">Submit</a></button>
         </form>
         <script src="js/suggestionForm.js"></script>
     </body>
