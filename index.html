@@ -8,13 +8,15 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <body>
-  <div class = "header">
-    <div class="indexheading"><h1 class = "helper_text_title">Welcome to Club Database </h1>
+  <div class = "container">
+    <div class="page-header"><h1 class = "text-center">Welcome to Club Database </h1>
     </div>
   </div>
-  <p class="search_bar">
-    <input type="text" id="club_search_name" placeholder="Club Soccer..">
-    <button id="myBtn" onclick="lookupClub()">Search Clubs!</button>
+  <br>
+  <div class = "container">
+    <input class="form-control" type="text" placeholder="e.g. Club Soccer" aria-label="Search" id="club_search_name">
+    <p class = "text-center">
+    <button id="myBtn" onclick="lookupClub()">Search Clubs!</button> </p>
     <script>
       var input = document.getElementById("club_search_name");
       input.addEventListener("keyup", function(event) {
@@ -24,30 +26,22 @@
         }
       });
     </script>
-  </p>
-  <div class="helper_text_sub2">
-    <h3>Popular Club</h3>
-  </div>
-  <div class = "container">
-    <div class="pop_clubs">
+</div>
+    <h3 class = "text-center">Popular Club</h3>
+    <div class="container">
       <div class="row">
-        <img class="popular_images" src="images/p1.jpg">
+        <img src="images/google-logo.jpg" class="mx-auto d-block">
       </div>
-      <div class="row">
-        <p class="club_title_text"> Google Developers Student Club</p>
-      </div>
-      <div class="row">
-        <p class="description_text">Google Developers Student Club aims to empower the greater community through the use of technology.
-        </p>
-      </div>
-      <button class="learn_more_button"> <a href="index.html"> Learn More!</a></button>
+      <div class = "text-center">
+        <p class="font-weight-bold"> Google Developers Student Club</p></div>
+        <p class="text-center">Google Developers Student Club aims to empower the greater community through the use of technology.
+        </p> <p class = "text-center">
+      <button class="learn_more_button"> <a href="index.html"> Learn More!</a></button></p>
     </div>
-  </div>
-
-  <div>
-    <footer class="footer">
+    <div class = "container">
+    <footer>
       <div class="footerbutton">Contact Us</div>
-      <div class="indexheading"><a href="suggestionForm.html">Feedback Survey</a> </div>
+      <div class="indexheading"><a href="suggestionForm.html">Feedback Survey</a></div>
     </footer>
   </div>
   <script src="js/Index.js"></script>
