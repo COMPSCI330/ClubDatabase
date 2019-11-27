@@ -14,80 +14,84 @@
     </form>
     <button class="page3button" onclick="window.location.href = 'index.html';" style="background-color: black;color:white;">Home</button>
   </nav>
-  <div class = "container-fluid">
-  <h1> <img src="images/graduate.jpg" alt="Club Picture" style="float:right;width:400px;height:200px;">Graduate Student Club </h1>
-  <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  </p></div><br>
-<div class = "row">
-  <div class = "col-sm-4">
+  <div class="container-fluid">
+    <h1> <img src="images/graduate.jpg" alt="Club Picture" style="float:right;width:400px;height:200px;">Graduate Student Club </h1>
+    <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </p>
+  </div><br>
   <h2> Contact Us </h2>
   <p> Email: random@northwestern.edu </p>
   <p> Number: 555-555-5555 </p>
   <p> Contact Name: John Doe </p>
-</div><div class = "col-sm-8">
-  <h2> Calendar </h2>
-  <p> Add an event! <p>
-      <form>
-        Name of Event (e.g Event at 3pm at Tech Auditorium): <br>
-        <input type="text" name="name" id="title"><br>
-        Month (e.g. 12):<br>
-        <input type="number" name="month" id="month"><br>
-        Day (e.g 20):<br>
-        <input type="number" name="day" id="day"><br>
-        Year (e.g. 2019):<br>
-        <input type="number" name="year" id="year"><br>
-      </form>
-      <button onclick="submit()">Add</button>
-      <div id="calendar">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2> Calendar </h2>
+        <p> Add an event! <p>
+            <form>
+              Name of Event (e.g Event at 3pm at Tech Auditorium): <br>
+              <input type="text" name="name" id="title"><br>
+              Month (e.g. 12):<br>
+              <input type="number" name="month" id="month"><br>
+              Day (e.g 20):<br>
+              <input type="number" name="day" id="day"><br>
+              Year (e.g. 2019):<br>
+              <input type="number" name="year" id="year"><br>
+            </form>
+            <button onclick="submit()">Add</button>
+            <div id="calendar">
 
-      </div></div>
+            </div>
+      </div>
       <script type="text/javascript" src="js/calendar.js"></script>
       <script type="text/javascript" src="js/demo1.js"></script>
-      <div class = "container">
-      <h2> Comments </h2>
-      <div class="comment">
+      <div class="col">
+        <h2> Comments </h2>
+        <div class="comment">
 
-        <textarea id="name" type="text" rows="1" cols="40" placeholder="Name (optional)"></textarea><br>
-        <textarea id="comm" type="text " rows="2" cols="40" placeholder="write your name (optional) and a comment......"></textarea>
-        <br>
-        <input type="submit" value="Post" onclick="insert()" style="width:100px;" />
-        <br>
-        <br>
-      </div>
-      <div class="comment_box">
-        <div id="display"></div>
-        <p>Brandon: first comment</p>
-        <p>Pahul: second comment</p>
-      </div>
+          <textarea id="name" type="text" rows="1" cols="40" placeholder="Name (optional)"></textarea><br>
+          <textarea id="comm" type="text " rows="2" cols="40" placeholder="write your name (optional) and a comment......"></textarea>
+          <br>
+          <input type="submit" value="Post" onclick="insert()" style="width:100px;" />
+          <br>
+          <br>
         </div>
-        <script type="text/javascript">
-          var nameinput = document.getElementById("name");
-          var titles = [];
-          var titleInput = document.getElementById("comm");
-          var messageBox = document.getElementById("display");
+        <div class="comment_box">
+          <div id="display"></div>
+          <p>Brandon: first comment</p>
+          <p>Pahul: second comment</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var nameinput = document.getElementById("name");
+    var titles = [];
+    var titleInput = document.getElementById("comm");
+    var messageBox = document.getElementById("display");
 
-          function insert() {
-            if (nameinput.value) {
-              titles.push(nameinput.value + ": ");
-              titles.push(titleInput.value + "<br>");
-              clearAndShow();
-            } else {
-              titles.push(titleInput.value + "<br>");
-              clearAndShow();
-            }
-          }
+    function insert() {
+      if (nameinput.value) {
+        titles.push(nameinput.value + ": ");
+        titles.push(titleInput.value + "<br>");
+        clearAndShow();
+      } else {
+        titles.push(titleInput.value + "<br>");
+        clearAndShow();
+      }
+    }
 
-          function clearAndShow() {
-            titleInput.value = "";
-            nameinput.value = "";
-            messageBox.innerHTML = ""
-            messageBox.innerHTML += " " + titles.join(" ");
-          }
-        </script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    function clearAndShow() {
+      titleInput.value = "";
+      nameinput.value = "";
+      messageBox.innerHTML = ""
+      messageBox.innerHTML += " " + titles.join(" ");
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
