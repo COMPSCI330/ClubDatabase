@@ -1,86 +1,55 @@
 <!DOCTYPE html>
 
 <html>
+<html lang="en">
 <title>Club Database</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/extras.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 <body>
-  <div class = "header">
-    <div class="indexheading"><h1 class = "helper_text">Welcome to Club Database</h1></div>
-
+  <div class="container">
+    <div class="page-header">
+      <h1 class="text-center">Welcome to Club Database </h1>
+    </div>
   </div>
-
-  <div class = "helper_text">
-    <h2>Find Clubs!</h2>
-  </div>
-
-  <p class = "search_bar">
-    <input type="text" id = "club_search_name" placeholder="Club Soccer..">
-    <button id = "myBtn" onclick="lookupClub()">Search Clubs!</button>
+  <br>
+  <div class="container">
+    <input class="form-control" type="text" placeholder="e.g. Club Soccer" aria-label="Search" id="club_search_name">
+    <p class="text-center">
+      <button id="myBtn" onclick="lookupClub()">Search Clubs!</button> </p>
     <script>
-    var input = document.getElementById("club_search_name");
-    input.addEventListener("keyup", function(event) {
-      if (event.keyCode === 13) {
-       event.preventDefault();
-       document.getElementById("myBtn").click();
-      }
-    });
+      var input = document.getElementById("club_search_name");
+      input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementById("myBtn").click();
+        }
+      });
     </script>
-  </p>
-  <div class = "helper_text">
-    <h3>Popular Clubs</h3>
   </div>
-  <div style = "background-color: #cfecec">
-    <div class = "column">
-      <div class = "row">
-        <img class = "popular_images" src = "images/p1.jpg">
-      </div>
-      <div class = "row">
-        <p class = "club_title_text"> Google Developers Student Club</p>
-      </div>
-      <div class = "row">
-        <p class = "description_text">Google Developers Student Club aims to empower the greater community through the use of technology.
-        </p>
-      </div>
-      <button class="learn_more_button"> <a href = "index.html"> Learn More!</a></button>
+  <h3 class="text-center">Popular Club</h3>
+  <div class="container">
+    <div class="row">
+      <img src="images/google-logo.jpg" class="mx-auto d-block">
     </div>
-
-    <div class = "column">
-      <div class = "row">
-        <img class = "popular_images"  src = "images/p2.jpg">
-      </div>
-      <div class = "row">
-        <p class = "club_title_text"> Popular Club 2</p>
-      </div>
-      <div class = "row">
-        <p class = "description_text">Here is a basic description of the club blah balh balh here is what we do basi basic to learn more click the button</p>
-      </div>
-      <button class="learn_more_button"> <a href = "index.html"> Learn More!</a></button>
-    </div>
-
-    <div class = "column">
-      <div class = "row">
-        <img class = "popular_images" src = "images/p3.jpg">
-      </div>
-      <div class = "row">
-        <p class = "club_title_text"> Popular Club 3</p>
-      </div>
-      <div class = "row">
-        <p class = "description_text">Here is a basic description of the club blah balh balh here is what we do basi basic to learn more click the button</p>
-      </div>
-      <button class="learn_more_button"><a href = "index.html"> Learn More!</a></button>
+    <p class="font-weight-bold text-center"> Google Developers Student Club</p>
+    <p class="text-center">Google Developers Student Club aims to empower the greater community through the use of technology.
+    </p>
+    <div class="text-center">
+      <button class="learn_more_button"> <a href="index.html"> Learn More!</a></button></p>
     </div>
   </div>
-
-  <div>
-    <footer class="footer">
-      <div class="footerbutton">Contact Us</div>
-    </footer>
-  </div>
-  <script src="js/Index.js"></script>
+    <div class="container">
+      <footer>
+        <div class="footerbutton">Contact Us</div>
+        <div class="indexheading"><a href="suggestionForm.html">Feedback Survey</a></div>
+      </footer>
+    </div>
+    <script src="js/Index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+
 </html>
