@@ -1,36 +1,114 @@
 <!DOCTYPE html>
 <html>
-    <title>Club Suggestion Form</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/extras.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <body>
-        <div class = "header">
-            <h1 class="indexheading">Suggestion Form Survey !</h1>
-        </div>
-        <form class="suggestionForm" id = "suggestionForm_">
-            How would you rate your experience on our app? (1 being the lowest)<br>
-            <input type = "radio" name="grad?1" value="1" >1
-            <input type = "radio" name="grad?2" value="0">2
-            <input type = "radio" name="grad?2" value="0">3
-            <input type = "radio" name="grad?2" value="0">4
-            <input type = "radio" name="grad?2" value="0">5<br><br>
-            Would you reccomend us to a friend?<br>
-            <input type = "radio" name="volunteer?1" value="1" >Yes
-            <input type = "radio" name="volunteer?2" value="0">No<br><br>
-            What features do you dislike about the app? (50 words or less)<br>
-            <input type = "text" name="dislike?" placeholder="nothing..."><br><br>
-            What features do you like about the app? (50 words or less)<br>
-            <input type = "text" name="like?" placeholder="everything..."><br><br>
-            On a scale from 1 to 5 (1 being the lowest), how easy is it navigating Club Database?<br>
-            <input type = "radio" name="grad?1" value="1" >1
-            <input type = "radio" name="grad?2" value="0">2
-            <input type = "radio" name="grad?2" value="0">3
-            <input type = "radio" name="grad?2" value="0">4
-            <input type = "radio" name="grad?2" value="0">5<br><br><br>
+<title>Club Suggestion Form</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/extras.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-           <button><a href="thankyou.html">Submit</a></button>
-        </form>
-        <script src="js/suggestionForm.js"></script>
-    </body>
+<body>
+  <nav class="navbar navbar-light bg-light">
+<button class="page3button" onclick="window.location.href = 'index.html';" style="background-color: black;color:white;">Home</button></nav><div class = "text-center">
+<div class = "container"><h1>Suggestion Form Survey !</h1></div></div><br>
+<div class = "container">
+  <form>
+    <div class="form-group">
+      How would you rate your experience on our app? (1 being the lowest)<br>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">1</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">2</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">3</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">4</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">5</label>
+      </div>
+      <br><br>
+      Would you recommend us to a friend?<br>
+      <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Yes</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+<label class="form-check-label" for="inlineRadio1">No</label>
+</div><br>
+<br>
+      <div class="form-group">
+   <label for="exampleFormControlTextarea1"> What features do you dislike about the app?</label>
+   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+ </div>
+ <div class="form-group">
+<label for="exampleFormControlTextarea1">What features do you live about the app?</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+      On a scale from 1 to 5 (1 being the lowest), how easy is it navigating Club Database?<br>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">1</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">2</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">3</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">4</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">5</label>
+      </div><br>
+<div class = "text-center">
+      <button><a href="thankyou.html">Submit</a></button></div>
+    </div>
+  </form>
+</div>
+<div class = "container">
+<div class = "text-center">You can search all the clubs on our database below. <br>
+
+<p>
+<input oninput="w3.filterHTML('#id01', '.item', this.value)" placeholder="Search for names..">
+</p>
+
+<table class="table" id="id01" border="1">
+  <thead>
+  <tr>
+    <th scope = "col">Club Name</th>
+    <th scope = "col">Group</th>
+  </tr>
+</thead>
+<tbody>
+  <tr class="item">
+    <td>Graduate Student Club</td>
+    <td>Graduate Students</td>
+  </tr>
+  <tr class="item">
+    <td>American Red Cross Club</td>
+    <td>Undergraduate Students </td>
+  </tr>
+  <tr class="item">
+    <td>Google Developers Student Club</td>
+    <td>All</td>
+  </tr>
+</table>
+</div>
+</div>
+  <script src="js/suggestionForm.js"></script>
+</body>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 </html>
