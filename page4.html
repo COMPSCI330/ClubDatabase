@@ -8,16 +8,12 @@
 <link rel="stylesheet" href="css/extras.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 <link rel="stylesheet" href="css/theme1.css" />
-<nav >
-    <form>
-      <ul class="breadcrumb" style="background: white;">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="redcrossresult.html">Search Result</a></li>
-        
-      </ul>
-    </form>
-    
-  </nav>
+<nav class="navbar navbar-light bg-light">
+  <form>
+    <input type="button" style="background-color: #4CAF50;color:white;" value="Go back!" onclick="history.back()">
+  </form>
+  <button class="page3button" onclick="window.location.href = 'index.html';" style="background-color: black;color:white;">Home</button>
+</nav>
 <h1> <img src="images/ARC.png" alt="Club Picture" style="float:right;width:600px;height:200px;">American Red Cross Club </h1>
 <p> Lorem ipsum carrots, enhanced undergraduate developer, but they do occaecat time and vitality, such as labor and obesity. Over the years come, who nostrud exercise, the school district work unless they aliquip advantage from it. Homework if
   cupidatat consumer to find pleasure wants to be a football cillum he shuns pain, produces no resultant. Excepteur cupidatat blacks are not excepteur, is soothing to the soul, that is, they deserted the general duties of those who are to blame for
@@ -52,48 +48,18 @@
     <script type="text/javascript" src="js/demo.js"></script>
     <div class="col">
       <h2> Comments </h2>
-      <div class="comment">
-
-        <textarea id="name" type="text" rows="1" cols="40" placeholder="Name (optional)"></textarea><br>
-        <textarea id="comm" type="text " rows="2" cols="40" placeholder="write your name (optional) and a comment......"></textarea>
-        <br>
-        <input type="submit" value="Post" onclick="insert()" style="width:100px;" />
-
-        <br>
-        <br>
-      </div>
-      <div class="comment_box">
-        <p>Brandon: first comment</p>
-        <p>Pahul: second comment</p><div id="display"></div>
-      </div>
+      <section>
+			<textarea class="commentBox" placeholder="Place your name and comment here" type="textarea"></textarea>
+			<p><span class="counter">140</span> Characters left</p>
+			<button>Post</button>
+			<ul class="clearfix comments">
+				<li>Brandon: great</li>
+				<li>Pahul: Amazing</li>
+			</ul>
+		</section>
     </div>
   </div>
 </div>
-
-<script type="text/javascript">
-  var nameinput = document.getElementById("name");
-  var titles = [];
-  var titleInput = document.getElementById("comm");
-  var messageBox = document.getElementById("display");
-
-  function insert() {
-    if (nameinput.value) {
-      titles.push(nameinput.value + ": ");
-      titles.push(titleInput.value + "<br>");
-      clearAndShow();
-    } else {
-      titles.push(titleInput.value + "<br>");
-      clearAndShow();
-    }
-  }
-
-  function clearAndShow() {
-    titleInput.value = "";
-    nameinput.value = "";
-    messageBox.innerHTML = ""
-    messageBox.innerHTML += " " + titles.join(" ");
-  }
-</script>
 
 
 
@@ -101,6 +67,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/myscript.js"></script>
 </body>
 
 </html>
