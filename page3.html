@@ -8,11 +8,15 @@
 <link rel="stylesheet" href="css/theme1.css">
 
 <body>
-  <nav class="navbar navbar-light bg-light">
+  <nav >
     <form>
-      <input type="button" style="background-color: #4CAF50;color:white;" value="Go back!" onclick="history.back()">
+      <ul class="breadcrumb" style="background: white;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">Search Result</a></li>
+        
+      </ul>
     </form>
-    <button class="page3button" onclick="window.location.href = 'index.html';" style="background-color: black;color:white;">Home</button>
+    
   </nav>
   <div class="container-fluid">
     <h1> <img src="images/graduate.jpg" alt="Club Picture" style="float:right;width:400px;height:200px;">Graduate Student Club </h1>
@@ -21,15 +25,15 @@
     </p>
   </div><br>
   <div class = "container">
-  <h2> Contact Us </h2>
-  <p> Email: random@northwestern.edu </p>
-  <p> Number: 555-555-5555 </p>
-  <p> Contact Name: John Doe </p></div>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2> Calendar </h2>
-        <p> Add an event! <p>
+    <h2> Contact Us </h2>
+    <p> Email: random@northwestern.edu </p>
+    <p> Number: 555-555-5555 </p>
+    <p> Contact Name: John Doe </p></div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2> Calendar </h2>
+          <p> Add an event! <p>
             <form>
               Name of Event (e.g Event at 3pm at Tech Auditorium): <br>
               <input type="text" name="name" id="title"><br>
@@ -69,4 +73,4 @@
     <script src="js/myscript.js"></script>
 </body>
 
-</html>
+      </html>
